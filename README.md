@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Company Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What I have learnt
+- React **useState** doesn't restart the animation and only texts were swapped unless there is different key. That's the reason why objects with key-value pairs were created in [constants.js](src/components/home/constants.js) and use those keys to restart animation in [text-animation.js](src/components/home/text_animation.jsx).
+- There is 8px margin in body tag and it is removed in [app.css](src/app.css)
+- animation is heavily inspired by [this video](https://www.youtube.com/live/1rTaNzjGOek)
+- Svg in div doesn't tend to follow justify-contents and align-items. It has be wrapped inside the div tag and use flex as [below](src/components/jump_to_btn/jump_to_btn.css).
 
-## Available Scripts
+        .jump-to-btn {
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-In the project directory, you can run:
 
-### `npm start`
+### home.css
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        .home-text {
+            opacity: 0;
+            white-space: pre;
+            animation-fill-mode: forwards;
+            ...
+        }
 
-### `npm test`
+- **whitespace** is needed as span tag doesn't support that.
+- **animation-fill-mode** is for preventing the text to return to ***0 opacity*** after animation as it is stated in home-text css. It is also in [jump_to_btn.css](src/components/jump_to_btn/jump_to_btn.css) to prevent the same scenario.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
