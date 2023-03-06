@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@font-face {
+    font-family: "Audrey-Normal";
+    src: url("./assets/fonts/Audrey/Audrey-Normal.otf")format("opentype");
+}
 
-body{
+body {
     margin: 0;
+    padding: 0;
+    display: block;
     background-color: black;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Audrey-Normal', sans-serif;
 
 }
-span{
+
+span {
     user-select: none;
     display: inline-block;
 }
