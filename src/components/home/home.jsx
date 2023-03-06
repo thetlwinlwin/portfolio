@@ -15,12 +15,14 @@ function HomePage() {
     }
 
     return (
-        <div className="center-div">
-            <span onClick={onClick}>
-                <SpanAnimation textMap={text} />
-            </span>
-            {isFinal ? <JumpToBtn /> : null}
-        </div>
+        <article className="home-article">
+            <div className='home-div'>
+                <span className='text-host' onClick={onClick}>
+                    <SpanAnimation textMap={text} isFinal={isFinal} />
+                </span>
+                {isFinal ? <JumpToBtn /> : null}
+            </div>
+        </article>
     );
 }
 export default HomePage;
