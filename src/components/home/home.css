@@ -1,9 +1,18 @@
-.center-div {
-    margin-top: 40vh;
+.home-article {
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.home-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-text-css {
+    cursor: context-menu;
 }
 
 .home-text {
@@ -30,7 +39,18 @@
     animation-delay: 1.5s;
 }
 
+@media screen and (max-width:600px) {
+    .home-div {
+        flex-direction: column;
+    }
 
+    .text-host {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @keyframes text-animator {
     0% {
