@@ -8,24 +8,26 @@
 
 #arrow1 {
     opacity: 0;
-    animation-name: arrow;
-    animation-duration: 2s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
+    animation-name: animation, arrow;
+    animation-duration: 2s, 2s;
+    animation-delay: 0.3s, 2.3s;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, infinite;
 }
 
 #arrow2 {
     opacity: 0;
-    animation-name: arrow;
-    animation-duration: 2s;
-    animation-delay: 0.9s;
-    animation-fill-mode: forwards;
+    animation-name: animation, arrow;
+    animation-duration: 2s, 2s;
+    animation-delay: 0.9s, 2.9s;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, infinite;
 }
 
 
 #circle {
     opacity: 0;
-    animation-name: arrow;
+    animation-name: animation;
     animation-duration: 2s;
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
@@ -33,6 +35,16 @@
 
 
 @keyframes arrow {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animation {
     from {
         opacity: 0.0;
         transform: translateX(-100px);
