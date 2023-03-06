@@ -2,7 +2,7 @@
 
 ## What I have learnt
 - React **useState** doesn't restart the animation and only texts were swapped unless there is different key. That's the reason why objects with key-value pairs were created in [constants.js](src/components/home/constants.js) and use those keys to restart animation in [text-animation.js](src/components/home/text_animation.jsx).
-- There is 8px margin in body tag and it is removed in [app.css](src/app.css)
+- There is 8px margin in body tag and it can be removed in [app.css](src/app.css)
 - animation is heavily inspired by [this video](https://www.youtube.com/live/1rTaNzjGOek)
 - Svg in div doesn't tend to follow justify-contents and align-items. It has be wrapped inside the div tag and use flex as [below](src/components/jump_to_btn/jump_to_btn.css).
 
