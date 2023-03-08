@@ -27,3 +27,11 @@
 - **whitespace** is needed as span tag doesn't support that.
 - **animation-fill-mode** is for preventing the text to return to ***0 opacity*** after animation as it is stated in home-text css. It is also in [jump_to_btn.css](src/components/jump_to_btn/jump_to_btn.css) to prevent the same scenario.
 
+        .home-article {
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+- to take all the available height, [use **100dvh**](https://youtu.be/-sF5KsEo6gM) instead of **100vh** as it produces werid effect on mobile screen.

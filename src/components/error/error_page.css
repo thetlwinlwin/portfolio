@@ -1,0 +1,19 @@
+#error-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-page>h2 {
+    margin: 0;
+    font-size: 100px;
+    color: white;
+}
+
+#error-page>p {
+    margin: 0;
+    font-size: 50px;
+    color: white;
+}
