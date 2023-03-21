@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     display: block;
-    background-color: black;
+    background-color: white;
     font-family: 'Audrey-Normal', sans-serif;
 
 }
@@ -15,4 +15,6 @@ body {
 span {
     user-select: none;
     display: inline-block;
+    color: black;
+
 }
