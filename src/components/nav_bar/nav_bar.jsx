@@ -16,7 +16,6 @@ export default function NavBar() {
                 <Insta className='nav-icons' />
                 <Fb className='nav-icons' />
                 <Linkedin className='nav-icons' />
-
             </div>
         </div>
     );
