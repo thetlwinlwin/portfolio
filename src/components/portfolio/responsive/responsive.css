@@ -21,21 +21,34 @@
 
 .res-photo {
     flex: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 65vh;
+    position: relative;
 }
+
 
 .res-btn-container {
     margin-top: 5vh;
     align-self: flex-end;
 }
 
-
-.res-photo>picture>img {
-    width: 100%;
+.web-photo {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
     height: auto;
+    top: 0;
+    right: 0;
 }
+
+.phone-photo {
+    position: absolute;
+    z-index: 2;
+    width: auto;
+    height: 80%;
+    bottom: 0;
+    right: 50%;
+}
+
 
 .res-title {
     font-size: 26pt;
@@ -48,13 +61,36 @@
 }
 
 @media screen and (max-width: 1068px) {
-    .res-section {
-        flex-direction: column;
+    .res-container {
+        height: 80vh;
     }
 
+    .res-section {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .web-photo {
+        height: 80%;
+        max-width: 80%;
+        width: auto;
+    }
+
+    .phone-photo {
+        width: auto;
+        height: 65%;
+    }
 }
 
 @media screen and (max-width:734px) {
+    .res-container {
+        height: 80vh;
+    }
+
+    .res-text {
+        flex: none;
+    }
+
     .res-title {
         font-size: 20pt;
     }
@@ -62,4 +98,18 @@
     .res-body {
         font-size: 14pt;
     }
+
+
+
+    .web-photo {
+        height: auto;
+        max-height: 80%;
+        width: 100%;
+    }
+
+    .phone-photo {
+        height: 80%;
+        width: auto;
+    }
+
 }

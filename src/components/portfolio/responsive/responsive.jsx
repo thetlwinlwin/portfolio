@@ -1,6 +1,6 @@
 import './responsive.css';
-import img from '../../../assets/portfolio_img/img1.png';
-import phoneImg from '../../../assets/portfolio_img/img2.png';
+import webImg from '../../../assets/portfolio_img/grab_web.png';
+import phoneImg from '../../../assets/portfolio_img/grab_mobile.jpg';
 
 function Responsive() {
     return (
@@ -17,10 +17,8 @@ function Responsive() {
                 </div>
                 <div className="res-photo">
 
-                    <picture>
-                        <source media="(max-width: 800px)" srcset={phoneImg} />
-                        <img src={img} alt="img" />
-                    </picture>
+                    <img className='web-photo' src={webImg} alt="img" />
+                    <img className='phone-photo' src={phoneImg} alt="img" />
 
                 </div>
             </div>
