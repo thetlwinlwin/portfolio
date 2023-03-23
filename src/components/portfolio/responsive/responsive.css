@@ -1,4 +1,5 @@
 .res-container {
+    height: 70vh;
     display: flex;
     padding: 0 max(6vw, 3vh);
     flex-direction: column;
@@ -7,7 +8,7 @@
 .res-section {
     flex: 1;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 1vw;
 }
 
@@ -19,17 +20,13 @@
     justify-content: center;
 }
 
-
-
-
 .res-btn-container {
     align-self: flex-end;
 }
 
-
 .res-photo {
     flex: 2;
-    height: 70vh;
+    height: 85%;
     width: 100%;
     position: relative;
 }
@@ -39,6 +36,7 @@
     z-index: 1;
     width: 90%;
     height: auto;
+    max-height: 90%;
     top: 0;
     right: 0%;
 }
@@ -68,6 +66,31 @@
     color: black;
 }
 
+
+@media screen and (max-width: 1025px) {
+    .res-section {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2vh;
+    }
+
+    .sec-font {
+        font-size: 12pt;
+    }
+
+    .res-photo {
+        height: 50%;
+    }
+
+    .outside {
+        display: none;
+    }
+
+    .inside {
+        display: inline-block;
+    }
+}
+
 @media screen and (min-width:800px) and (max-width:1025px) {
     .web-photo {
         width: 60%;
@@ -80,56 +103,4 @@
         right: 55%;
     }
 
-}
-
-@media screen and (max-width: 1025px) {
-    .res-container {
-        height: 75vh;
-    }
-
-    .sec-font {
-        font-size: 12pt;
-    }
-
-    .res-text {
-        flex: none;
-    }
-
-    .res-photo {
-        flex: none;
-        height: 50%;
-    }
-
-    .outside {
-        display: none;
-    }
-
-    .inside {
-        display: inline-block;
-    }
-
-    .res-section {
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 2vh;
-    }
-}
-
-
-
-@media screen and (min-height: 1300px) {
-    .res-section {
-        gap: 1vh;
-        justify-content: space-evenly;
-    }
-
-    .web-photo {
-        width: 70%;
-        height: auto;
-        max-height: 90%;
-    }
-
-    .phone-photo {
-        left: 25%;
-    }
 }

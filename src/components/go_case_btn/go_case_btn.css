@@ -1,0 +1,17 @@
+.btn {
+    padding: 0;
+    height: clamp(40px, 5vh, 50px);
+    width: 50%;
+    border: none;
+}
+
+.btn>span {
+    font-family: "Calibri, sans-serif";
+    font-size: 16pt;
+}
+
+@media screen and (max-width:1250px) {
+    .btn>span {
+        font-size: 12pt;
+    }
+}
