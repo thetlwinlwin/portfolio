@@ -2,18 +2,39 @@
     height: 100vh;
 }
 
-.home {
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home-text {
-    font-size: 5vw;
+
+.home-end {
+    opacity: 0;
+    position: absolute;
+    top: 70vh;
+    transform: translateY(-100px);
+    transition: 500ms ease;
 }
 
-@media screen and (width<700px) {
-    .home-text {
-        font-size: 5vh;
-    }
+.home-end-show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.home-end-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: max(1vw, 1vh);
+    padding: max(7vw, 7vh);
+    flex-direction: column;
+}
+
+.home-end-wrapper>p {
+    font-size: clamp(1rem, 1rem + 1vw, 2rem);
+}
+
+.home-text {
+    text-align: center;
+    font-size: max(5vw, 5vh);
 }
