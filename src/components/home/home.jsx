@@ -2,7 +2,7 @@ import './home.css';
 import NavBar from '../nav_bar/nav_bar';
 import Responsive from "../portfolio/responsive/responsive";
 import useInView from '../intersection_hook';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 const homeText = [
     { title: 'Who We Are?' },
@@ -13,10 +13,9 @@ function HomePage() {
     const homeEndRef = useRef(null);
     const isInView = useInView(homeEndRef, {
         rootMargin: "0px",
-        threshold: 0.8,
+        threshold: 0.7,
     });
 
-    console.log(isInView);
 
 
 
@@ -24,32 +23,32 @@ function HomePage() {
         <>
             <NavBar />
             <div className="container">
-                <div className="section center">
+                <div className={`section center home-start ${isInView ? 'inactive' : ''}`}>
                     <span className='home-text'>{homeText[0].title}</span>
                 </div>
                 <div ref={homeEndRef} className={`center home-end ${isInView ? 'home-end-show' : ''}`}>
                     <div className='home-end-wrapper'>
                         <span className='home-text'>{homeText[1].title}</span>
-                        <p>
+                        <p className='para-text'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius elit quis diam efficitur, et sollicitudin metus scelerisque. Donec ac ornare augue. Vestibulum gravida augue sapien. Maecenas a purus felis. Curabitur feugiat tincidunt urna, at suscipit magna. Vestibulum pretium turpis non libero malesuada, eget aliquam urna laoreet. Donec suscipit suscipit posuere.
 
                         </p>
                     </div>
                 </div>
-                <div className="section center">
-                    <div className='home-end-wrapper'>
+                <div className={`section center client ${isInView ? 'inactive' : ''}`}>
+                    <div className='client-wrapper'>
                         <span className='home-text'> Our Clients</span>
-                        <p>
+                        <p className='para-text'>
                             Apple
                         </p>
-                        <p>
+                        <p className='para-text'>
                             Grab
                         </p>
-                        <p>
-                            1 Stop Solar
+                        <p className='para-text'>
+                            Sun
                         </p>
-                        <p>
-                            Aim High
+                        <p className='para-text'>
+                            Moon
                         </p>
                     </div>
                 </div>

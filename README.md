@@ -56,3 +56,10 @@ The app is hosted in this [url](https://thetlwin-portfolio.web.app)
         transition: all 0.5s;
 
 - The go-to-page btn was inspired by [this](https://youtu.be/iwoIuyRHy88). 
+
+
+
+
+## New Look
+
+- Intersection with tarnslate and opacity example is from [this](https://youtu.be/2IbRtjez6ag).
