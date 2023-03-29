@@ -10,7 +10,7 @@ const homeText = [
 ]
 
 function HomePage() {
-    const option = useMemo(() => ({ rootMargin: '0px', threshold: 0.7, }), [])
+    const option = useMemo(() => ({ rootMargin: '0px', threshold: 0.8, }), [])
 
     const homeEndRef = useRef(null);
     const clientRef = useRef(null);

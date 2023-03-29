@@ -10,14 +10,9 @@
     opacity: 0;
 }
 
-.lee {
-    background-color: aqua;
-}
-
 .show {
     opacity: 1;
 }
-
 
 .wrapper {
     display: flex;
