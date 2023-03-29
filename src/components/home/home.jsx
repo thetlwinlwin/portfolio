@@ -13,20 +13,20 @@ function HomePage() {
     const homeEndRef = useRef(null);
     const isInView = useInView(homeEndRef, {
         rootMargin: "0px",
-        threshold: 0.7,
+        threshold: 1,
     });
 
-
+    console.log(isInView);
 
 
     return (
         <>
             <NavBar />
             <div className="container">
-                <div className={`section center home-start ${isInView ? 'inactive' : ''}`}>
+                <div className='section'>
                     <span className='home-text'>{homeText[0].title}</span>
                 </div>
-                <div ref={homeEndRef} className={`center home-end ${isInView ? 'home-end-show' : ''}`}>
+                <div ref={homeEndRef} className={`section check hide${isInView ? 'show' : ''}`}>
                     <div className='home-end-wrapper'>
                         <span className='home-text'>{homeText[1].title}</span>
                         <p className='para-text'>
@@ -35,7 +35,7 @@ function HomePage() {
                         </p>
                     </div>
                 </div>
-                <div className={`section center client ${isInView ? 'inactive' : ''}`}>
+                <div className='section'>
                     <div className='client-wrapper'>
                         <span className='home-text'> Our Clients</span>
                         <p className='para-text'>
@@ -53,12 +53,12 @@ function HomePage() {
                     </div>
                 </div>
                 <Responsive />
-                <div className="section center">
+                <div className="section ">
                     <span className="home-text">
                         Section 5
                     </span>
                 </div>
-                <div className="section center" >
+                <div className="section " >
                     <span className="home-text">
                         Section 6
                     </span>
