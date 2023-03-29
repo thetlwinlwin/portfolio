@@ -1,42 +1,46 @@
 .section {
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1500ms;
+    transition: opacity 1000ms ease;
 }
 
 .hide {
     opacity: 0;
 }
 
+.lee {
+    background-color: aqua;
+}
 
 .show {
     opacity: 1;
 }
 
 
-.home-end-wrapper {
+.wrapper {
     display: flex;
     justify-content: center;
-    gap: max(1vw, 1vh);
     padding: max(7vw, 7vh);
     flex-direction: column;
+}
+
+.home-end-gap {
+    gap: max(1vw, 1vh);
+
+}
+
+.client-gap {
+    gap: min(1vw, 1vh);
+
 }
 
 .para-text {
     font-size: clamp(0.8rem, 0.8rem + 1vw, 2rem);
 }
 
-.home-text {
+.title-text {
     text-align: center;
     font-size: max(5vw, 5vh);
-}
-
-.client-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: min(1vw, 1vh);
-    padding: max(7vw, 7vh);
-    flex-direction: column;
 }
