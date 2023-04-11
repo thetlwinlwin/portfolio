@@ -1,17 +1,25 @@
 .section {
-    min-height: 90vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1000ms ease;
+    transition: opacity 300ms ease-in;
 }
+
+
+.intro-height {
+    height: 70vh !important;
+}
+
 
 .hide {
     opacity: 0;
+
 }
 
 .show {
     opacity: 1;
+
 }
 
 .wrapper {
