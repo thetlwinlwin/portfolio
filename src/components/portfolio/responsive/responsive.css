@@ -1,5 +1,5 @@
 .res-container {
-    height: 70vh;
+    height: 75vh;
     display: flex;
     padding: 0 max(6vw, 3vh);
     flex-direction: column;
@@ -20,9 +20,6 @@
     justify-content: center;
 }
 
-.res-btn-container {
-    align-self: flex-end;
-}
 
 .res-photo {
     flex: 2;
@@ -56,9 +53,6 @@
     font-size: 16pt;
 }
 
-.inside {
-    display: none;
-}
 
 .res-link {
     font-size: 36pt;
@@ -66,6 +60,11 @@
     color: black;
 }
 
+.learn-more-btn {
+    text-decoration: underline;
+    color: black;
+    font-size: 16pt;
+}
 
 @media screen and (max-width: 1025px) {
     .res-section {
@@ -82,14 +81,10 @@
         height: 50%;
     }
 
-    .outside {
-        display: none;
-    }
 
-    .inside {
-        display: inline-block;
-    }
 }
+
+
 
 @media screen and (min-width:800px) and (max-width:1025px) {
     .web-photo {

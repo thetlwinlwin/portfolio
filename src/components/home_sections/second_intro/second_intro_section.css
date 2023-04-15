@@ -1,0 +1,7 @@
+.second-intro-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: max(7vw, 7vh);
+    flex-direction: column;
+    gap: max(1vw, 1vh);
+}
