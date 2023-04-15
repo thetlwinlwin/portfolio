@@ -26,7 +26,7 @@ export default function PopUp({ open, closePopupFunc, goToHome, goToWebDev, goTo
                 <span onClick={goToWebDev}>Web Developmenet</span>
                 <span onClick={goToHome}>UX Design</span>
                 <span >Get Quote</span>
-                <div>
+                <div className='nav-icons-wrapper'>
                     {navIcons}
                 </div>
 

@@ -13,9 +13,9 @@ export default function NavBar({ btnOnclick }) {
                 {navIcons}
             </div>
             <div className='menu-wrapper' onClick={btnOnclick}>
-                <div className='burger one'></div>
-                <div className='burger two'></div>
-                <div className='burger three'></div>
+                <div className='burger'></div>
+                <div className='burger'></div>
+                <div className='burger'></div>
             </div>
         </div>
     );
